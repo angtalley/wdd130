@@ -49,9 +49,8 @@ nav a {
   }
 
   nav a:hover {
-    color: var(--nav-hover-link-color);
+    color: var(--headline-color-on-white);
     background-color: var(--nav-hover-background-color);
-    color: var(--headline-color-on-white)
   }
 
 #hero-msg h1 {
