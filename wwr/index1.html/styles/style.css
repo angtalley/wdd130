@@ -26,8 +26,9 @@
 body {
     max-width: 960px;
     margin: 0 auto;
-    padding: 4em;
+    padding: 0;
     font-size: 18px;
+    font-family: var(--paragraph-font);
     text-align: center;
     color: var(--paragraph-color-on-white)
   }
@@ -35,6 +36,7 @@ body {
 header {
     padding: 1em;
     text-align: center;
+    font-family: var(--heading-font);
     color: var(--paragraph-color-on-color);
     background-color: var(--paragraph-background-color);
 }
@@ -48,7 +50,7 @@ nav a {
     color: var(--headline-color-on-white)
   }
 
-  nav a:hover {
+nav a:hover {
     color: var(--headline-color-on-white);
     background-color: var(--nav-hover-background-color);
   }
@@ -73,14 +75,17 @@ main section {
 }
 
 #background {
-    height: 725px
-    background-color var(--paragraph-background-color); 
+    height: 725px;
+    background-color: var(--paragraph-background-color); 
 }
 
 .book {
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 15px;
     text-decoration: none;
     background-color: var(--nav-hover-background-color);
-    color: var(--paragraph-color-on-white)
+    color: var(--paragraph-color-on-color)
 }
 
 .book:hover{
@@ -89,6 +94,9 @@ main section {
 }
 
 .join {
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 30px;
     text-decoration: none;
     background-color: var(--nav-hover-background-color);
     color: var(--paragraph-color-on-white)
@@ -100,18 +108,22 @@ main section {
 }
 
 .msg {
+    padding: 35px;
     background-color: var(--nav-hover-background-color); 
 }
 
 .msg h2 {
+    margin: 0;
     color: var(--paragraph-color-on-white)
 }
 
 .msg p{
+    padding: 15px;
     color: var(--paragraph-color-on-white)
 }
 
 .home-title {
+    margin-top: 10px;
     color: var(--headline-color-on-white)
 }
 
@@ -124,13 +136,36 @@ h4 {
 }
 
 .icon {
+    padding: 10px;
     width: 80px;
 }
 
 footer p {
+    margin-top: 200px;
+    padding: 25px;
     font-size: 1.2em;
 }   
 
 footer p a:hover {
     text-decoration: underline;
 }   
+
+.rivers-card {
+    margin: 200px 0;
+}
+
+.camping-card {
+    margin: 200px 0;
+}
+
+.rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+
+main section img {
+    box-sizing: border-box;
+}
