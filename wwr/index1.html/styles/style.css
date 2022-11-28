@@ -95,7 +95,7 @@ nav a:hover {
 
 #hero-msg h4 {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 #hero-img{
@@ -251,30 +251,37 @@ main section img {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
-.rivers-idaho {
-    grid-column: 2/9;
-    grid-row: 4/9;
-    display: flex;
-    justify-content: space-around;
+.riversbio {
+    border: 1px solid #006d77;
+    margin: 36px auto;
+    background-color: #fff;
     text-align: center;
-    padding:1em;
-    min-width: 120px;
+    width: 95%;
+    padding: 20px;
+}
+.rivers-idaho {
+
+    text-align: justify;
+    min-width: 390px ;
     text-decoration: none;
-    padding: 10px;
+    margin: auto;
+    padding: 20px;
     color: var(--headline-color-on-white)
 }
 
-.idaho_rafting img {
-    margin: 200px 0;
-    grid-column: 2/9;
-    grid-row: 4/9;
+.idaho_rafting {
+    display: block;
+    float: right;
 }
 
 .rivers-card-img {
     border: 5px solid #006d77;
-    width: 100%;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #006d77;
+    display: block;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
 }
 
 .rivers-card-img:hover {
