@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Authors Realm</title>
-    <link rel="stylesheet" href="authorsite/styles/styles.css">
+    <link rel="stylesheet" href="/Users/angela/Documents/wdd130/authorsite/styles/styles.css">
 </head>
 <body>
     <header>
@@ -18,24 +19,104 @@
             <a href="">Contact Us</a>
         </nav>
     </header>
-    <div id="book">
+    <!-- <div id="book">
         <div id="book-box">
             <img id="books" src="books.jpg" alt="A pile of open books">
-        </div>
+        </div> -->
         <section id="">
             <h1 class="recom-title">Book Recommendations</h1>
             <p>
-                “You can never get a cup of tea large enough or a book long enough to suit me,” C.S. Lewis said. Well, what about five books, Lewis? Have you ever 
-                been caught up in a novel, or world, and when it finishes, you’re left wondering what is next? Fear no longer! This page explores writers of similar 
-                genres or story devices so you know what to read next. You’ll never be left bored or in a readers lag following this page. This page is created by readers, 
-                for readers. Leave a comment for a novel we’ve yet to discuss to find out what paths your current reading trend will take you.
+                “You can never get a cup of tea large enough or a book long enough to suit me,” 
+                C.S. Lewis said. Well, what about five books, Lewis? Here, you can find writers of similar 
+                genre or story so you know what to read next. You’ll never be left bored 
+                or in a readers lag following this page. Leave a comment for a novel we’ve yet to discuss 
+                to find out what paths your current reading trend will take you.
               </p>
         </section>
     </div>
-<main class="home-grid">
+<main class="">
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="author.jpg" style="width:30%" alt="Rupi Kaur's poetry book, milk and honey">
+          <div class="text">milk and honey</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="Maya.jpeg" style="width:45%" alt="Maya Angelou's Complete Poetry">
+          <div class="text">The Complete Poetry</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="princess.jpeg" style="width:45%" alt="Amanda Lovelace's the princes saves herself in this one">
+          <div class="text">the princess saves herself in this one</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="sunflowers.jpeg" style="width:36%" alt="Rupi Kaur's poetry book, the sun and her flowers">
+            <div class="text">the sun and her flowers</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="therapy.jpg" style="width:29%" alt="Logan Duane's the things I didn't say in therapy">
+            <div class="text">the things I didn't say in therapy</div>
+          </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+      </script>
 
 </main>
 <footer>
+    <section id="footer">
     <p>Authors Realm &copy; 2022 - Angela Talley</p>
     <p><a href="/Users/angela/Documents/wdd130/authorsite/site-plan.html">Site Plan</a></p>
     <p><a href="#">Contact Us</a></p>
@@ -50,6 +131,7 @@
             <img src="instagram.png" alt="instagram icon">
         </a>
     </div>
+    </section>
 </footer>
 </body>
 </html>
