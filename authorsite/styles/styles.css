@@ -344,7 +344,7 @@ nav a:hover {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
+  color: #136f63;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -373,10 +373,21 @@ nav a:hover {
   animation-duration: 1.5s;
 }
 
+.slides_text {
+  color: #136f63;
+  font-size: 15px;
+  padding: 50px 12px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
 
 
 
